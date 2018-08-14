@@ -114,5 +114,11 @@ end
 
 def play(board)
   until over? do
-  turn(board)
-  
+    turn(board)
+  end
+  if(won?)
+    puts "Congratulations Player #{winner}!"
+    elsif(draw?)
+    puts "Cat's Game!"
+  end
+end
