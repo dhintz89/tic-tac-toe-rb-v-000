@@ -113,6 +113,6 @@ def winner(board)
 end
 
 def play(board)
-  until
+  until over? do
   turn(board)
   
